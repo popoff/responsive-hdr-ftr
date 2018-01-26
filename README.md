@@ -1,3 +1,3 @@
-# Responsive header for Telecom company online community website https://club.volia.com
+# Responsive header for Ukrainian Telecom company online community website
 
 I made this one using Botstrap 4.

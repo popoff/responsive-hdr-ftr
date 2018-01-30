@@ -20,9 +20,27 @@ html {
   /* Custom page CSS
   -------------------------------------------------- */
   /* Not required for template or sticky footer method. */
-/*   
+  
   .container {
     width: auto;
     max-width: 680px;
     padding: 0 15px;
+    text-align: center;
+  }
+
+  img.social-link__item {
+      width: 25px;
+      height: 25px;
+      margin: 0 10px 5px;
+      border-radius: 3px;
+  }
+
+  /* span.text-muted > a {
+      color: #ff5900;
+  }
+   */
+
+
+  /* .social-links {
+      text-align: center;
   } */

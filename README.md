@@ -1,3 +1,2 @@
-# Responsive header for Ukrainian Telecom company online community website
+# Responsive header and footer template for online community website based on Botstrap 4.
 
-I made this one using Botstrap 4.

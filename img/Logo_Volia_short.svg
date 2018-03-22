@@ -1,0 +1,24 @@
+<svg width="164.542" height="141.853" viewBox="0 0 43.535 37.532" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="b" x1="36.94" x2="85.6" y1="11.43" y2="124.07" gradientTransform="matrix(.26458 -.0053 .0053 .26458 81.345 124.02)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f6773f" stop-opacity=".1" offset="0"/>
+      <stop stop-color="#f6773f" stop-opacity=".15" offset=".1"/>
+      <stop stop-color="#f6773f" stop-opacity=".28" offset=".27"/>
+      <stop stop-color="#f6773f" stop-opacity=".49" offset=".51"/>
+      <stop stop-color="#f6773f" stop-opacity=".77" offset=".79"/>
+      <stop stop-color="#f6773f" offset="1"/>
+    </linearGradient>
+    <linearGradient id="a" x1="159.36" x2="117.2" y1="-33.84" y2="75.42" gradientTransform="rotate(-2.636 2849.918 -1631.435) scale(.26458)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00953a" stop-opacity=".1" offset="0"/>
+      <stop stop-color="#00953a" stop-opacity=".22" offset=".18"/>
+      <stop stop-color="#00953a" stop-opacity=".55" offset=".55"/>
+      <stop stop-color="#00953a" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g stroke-width=".265">
+    <path d="M40.781 4.4s-14.2 1.588-17.269 8.996c-3.048 7.363-1.492 14.22-.415 17.42.404 1.201.733 3.175 2.116 3.387.905.132 2.686-.937 4.329-2.935 2.381-2.91 5.273-7.408 7.763-11.52a76.994 76.994 0 0 0 5.744-11.454c1.08-1.751.352-4.37-2.268-3.894z" fill="#b7d545"/>
+    <path d="M122.54 120.05s-13.758 3.95-15.552 11.771c-1.791 7.774.876 14.272 2.469 17.246.598 1.117 1.64 3.14 3.045 3.104 2.246-.056 6.152-8.845 9.147-16.404a77.213 77.213 0 0 0 3.77-12.245c.765-1.919-.384-4.382-2.879-3.472z" fill="url(#a)" transform="translate(-87.089 -117.97)"/>
+    <path d="M10.631.91c1.154-.87 3.5-1.852 4.138.894 0 0 3.969 22.296 7.477 31.128.918 2.307 2.927 2.76 3.649 2.44-4.017 3.328-8.29.119-8.29.119S5.773 28.024 3.665 19.978C.774 8.968 10.63.908 10.63.908z" fill="#ffb338"/>
+    <path d="M92.222 121.67c.995-1.058 3.143-2.424 4.233.188 0 0 7.586 21.323 12.517 29.443 1.289 2.117 3.532 2.315 4.02 2.042-3.417 3.959-8.179 1.26-8.179 1.26s-12.901-5.384-16.309-12.965c-4.673-10.372 3.717-19.968 3.717-19.968z" fill="url(#b)" transform="translate(-87.089 -117.97)"/>
+  </g>
+</svg>

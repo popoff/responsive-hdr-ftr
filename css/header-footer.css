@@ -1,6 +1,4 @@
 
-/* RESPONSIVE HEADER AND FOOTER STYLES*/
-
 html {
   position: relative;
   min-height: 100%;
@@ -32,17 +30,28 @@ header {
   text-align: center;
 }
 
-/* Bootstrap classes customization */
-img.social-link__item {
-  width: 25px;
-  height: 25px;
-  margin: 0 10px 5px;
-  border-radius: 3px;
+/* BOOTSTRAP CLASSES CUSTOMIZATION */
+
+/* Removes navbar toggler border color */
+.navbar-light .navbar-toggler {
+  border-color: transparent;
 }
 
-span.social-link > a {
-  text-decoration: none;
+/* Changes navbar toggler icon color*/
+/*.navbar-light .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238, 100, 26, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}*/
+
+/* Adds CSS animation to the navber toggler icon*/
+.navbar-light .navbar-toggler-icon {
+  transition:all .5s linear;
 }
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+  transform:rotate(180deg);
+}
+
+/* Header an footer common styles */
 
 span.text-muted {
   font-size: 0.90rem;
@@ -88,6 +97,20 @@ a.navbar-brand.brand-community:focus {
 a.navbar-brand.brand-community:hover {
   color: #009639;
 }
+
+/* Footer social icons styles */
+
+img.social-link__item {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 5px;
+  border-radius: 3px;
+}
+
+span.social-link > a {
+  text-decoration: none;
+}
+
 
 /* Social icons margin fix for smallest displays*/
 @media (max-width: 465px) {

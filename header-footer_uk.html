@@ -2,16 +2,14 @@
 <html lang="uk">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
 
   <!-- Custom CSS -->
@@ -24,18 +22,40 @@
 
   <!-- Responsive Header -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow flex-row">
+      <!-- Brand section -->
       <a class="navbar-brand" href="http://volia.com" target="_blank">
-        <img src="./img/Logo_Volia_short.svg" width="50px" height="50px" class="d-inline-block align-center" alt="Логотип ВОЛЯ">
+        <img src="./img/logo-volia-short.svg" width="35px" height="35px" class="d-inline-block align-center" alt="Логотип ВОЛЯ">
       </a>
       <a class="navbar-brand brand-community" href="https://club.volia.com">ВОЛЯ Клуб</a>
+      <!-- Brand section end -->
+      <!-- Navbar toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Header menu -->
+      <!-- Navbar toggler end -->
+      <!-- Header main menu -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Community menu section -->
         <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://my.volia.com/kiev/ru/cockpit/dashboard?utm_source=volia-club-header&utm_medium=menu-link&utm_campaign=volia-club-header-menu-link"
+              target="_blank" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Спільнота</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://my.volia.com/kiev/ru/cockpit/account?utm_source=volia-club-header&utm_medium=menu-link&utm_campaign=volia-club-header-menu-link"
+                target="_blank">Розваги</a>
+              <a class="dropdown-item" href="https://my.volia.com/kiev/ru/cockpit/services?utm_source=volia-club-header&utm_medium=menu-link&utm_campaign=volia-club-header-menu-link"
+                target="_blank">Інтернет та технології</a>
+              <a class="dropdown-item" href="https://my.volia.com/kiev/ru/cockpit/applications?utm_source=volia-club-header&utm_medium=menu-link&utm_campaign=volia-club-header-menu-link"
+                target="_blank">Телебачення та кино</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://my.volia.com/kiev/ru/cockpit/offers?utm_source=volia-club-header&utm_medium=menu-link&utm_campaign=volia-club-header-menu-link"
+                target="_blank">Експетний розділ</a>
+              <a class="dropdown-item" href="https://my.volia.com/kiev/ru/cockpit/loyalty/bonuses?utm_source=volia-club-header&utm_medium=menu-link&utm_campaign=volia-club-header-menu-link">Інше</a>
+            </div>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="https://my.volia.com/kiev/ru/cockpit/dashboard?utm_source=volia-club-header&utm_medium=menu-link&utm_campaign=volia-club-header-menu-link"
               target="_blank" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Мій кабинет</a>
@@ -88,81 +108,140 @@
             </div>
           </li>
         </ul>
-        <!-- Language Menu -->
-        <!-- <span>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
-                Укр
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Рус
-              </a>
-            </li>
-          </ul>
-        </span> -->
+        <!-- Community menu section end -->
+
+        <!-- Additional menu section -->
+        <ul class="navbar-nav ml-md-auto d-none d-md-flex">
+          <!-- Social networks icons navbar section -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://t.me/myvolia?utm_source=volia-club-header&utm_medium=clickable-icon&utm_campaign=volia-club-footer-telegram-icon"
+              target="_blank" rel="noopener" aria-label="Канал MyVolia у Telegram">
+              <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" focusable="false">
+                <title>Канал MyVolia у Telegram</title>
+                <path fill-opacity=".7" d="M20.2303361,1.54889258 L17.1688358,15.9868554 C16.9378646,17.0058458 16.3355281,17.2594612 15.4795761,16.7794035 L10.8148641,13.342009 L8.56402738,15.5067976 C8.31494082,15.7558842 8.10661388,15.9642111 7.62655615,15.9642111 L7.96169079,11.2134511 L16.6072588,3.40119082 C16.9831531,3.06605617 16.5257396,2.88037346 16.0230376,3.21550811 L5.3349598,9.94537407 L0.733651707,8.50520087 C-0.26722338,8.19271046 -0.285338766,7.50432579 0.941978648,7.02426805 L18.9396148,0.0906039922 C19.7729226,-0.221886419 20.5020669,0.276286701 20.2303361,1.54889258 Z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://facebook.com/voliaofficial?utm_source=volia-club-header&utm_medium=clickable-icon&utm_campaign=volia-club-footer-facebook-icon"
+              target="_blank" rel="noopener" aria-label="ВОЛЯ у Facebook">
+              <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" focusable="false">
+                <title>ВОЛЯ у Facebook</title>
+                <path fill-opacity=".7" d="M18,1.92857143 L18,16.0714286 C18,17.1361607 17.1361607,18 16.0714286,18 L12.6441964,18 L12.6441964,10.8803571 L15.0790179,10.8803571 L15.4285714,8.16428571 L12.6441964,8.16428571 L12.6441964,6.42857143 C12.6441964,5.64107143 12.8611607,5.10669643 13.9901786,5.10669643 L15.4285714,5.10669643 L15.4285714,2.67991071 C15.1794643,2.64776786 14.3276786,2.57142857 13.33125,2.57142857 C11.2580357,2.57142857 9.83571429,3.83705357 9.83571429,6.16339286 L9.83571429,8.16830357 L7.39285714,8.16830357 L7.39285714,10.884375 L9.83973214,10.884375 L9.83973214,18 L1.92857143,18 C0.863839286,18 0,17.1361607 0,16.0714286 L0,1.92857143 C0,0.863839286 0.863839286,0 1.92857143,0 L16.0714286,0 C17.1361607,0 18,0.863839286 18,1.92857143 Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/voliaofficial?utm_source=volia-club-header&utm_medium=clickable-icon&utm_campaign=volia-club-footer-twitter-icon"
+              target="_blank" rel="noopener" aria-label="ВОЛЯ у Twitter">
+              <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" focusable="false">
+                <title>ВОЛЯ у Twitter</title>
+                <path fill-opacity=".7" d="M16.0714286,0 L1.92857143,0 C0.863839286,0 0,0.863839286 0,1.92857143 L0,16.0714286 C0,17.1361607 0.863839286,18 1.92857143,18 L16.0714286,18 C17.1361607,18 18,17.1361607 18,16.0714286 L18,1.92857143 C18,0.863839286 17.1361607,0 16.0714286,0 Z M14.1066964,6.38035714 C14.1147321,6.49285714 14.1147321,6.609375 14.1147321,6.721875 C14.1147321,10.2053571 11.4629464,14.2191964 6.61741071,14.2191964 C5.12276786,14.2191964 3.73660714,13.7852679 2.57142857,13.0379464 C2.784375,13.0620536 2.98928571,13.0700893 3.20625,13.0700893 C4.43973214,13.0700893 5.57276786,12.6522321 6.47678571,11.9450893 C5.31964286,11.9209821 4.34732143,11.1616071 4.01383929,10.1169643 C4.41964286,10.1772321 4.78526786,10.1772321 5.203125,10.06875 C3.99776786,9.82366071 3.09375,8.76294643 3.09375,7.48125 L3.09375,7.44910714 C3.44330357,7.64598214 3.853125,7.76651786 4.28303571,7.78258929 C3.54891221,7.29427367 3.10837797,6.47053501 3.10982143,5.58883929 C3.10982143,5.09866071 3.23839286,4.64866071 3.46741071,4.25892857 C4.76517857,5.85803571 6.71383929,6.90267857 8.89955357,7.01517857 C8.52589286,5.22723214 9.86383929,3.77678571 11.4709821,3.77678571 C12.2303571,3.77678571 12.9133929,4.09419643 13.3955357,4.60848214 C13.9901786,4.49598214 14.5607143,4.275 15.0669643,3.97366071 C14.8700893,4.584375 14.45625,5.09866071 13.9098214,5.42410714 C14.4401786,5.36785714 14.9544643,5.21919643 15.4285714,5.01428571 C15.0709821,5.540625 14.6209821,6.00669643 14.1066964,6.38035714 L14.1066964,6.38035714 Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/voliaofficial?utm_source=volia-club-header&utm_medium=clickable-icon&utm_campaign=volia-club-footer-youtube-icon"
+              target="_blank" rel="noopener" aria-label="Канал ВОЛЯ на YouTube">
+              <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" focusable="false">
+                <title>Канал ВОЛЯ на YouTube</title>
+                <path fill-opacity=".7" d="M7.50535714,6.834375 L11.3303571,9.00803571 L7.50535714,11.1816964 L7.50535714,6.834375 Z M18,1.92857143 L18,16.0714286 C18,17.1361607 17.1361607,18 16.0714286,18 L1.92857143,18 C0.863839286,18 0,17.1361607 0,16.0714286 L0,1.92857143 C0,0.863839286 0.863839286,0 1.92857143,0 L16.0714286,0 C17.1361607,0 18,0.863839286 18,1.92857143 Z M16.3125,9.01205357 C16.3125,9.01205357 16.3125,6.61741071 16.0071429,5.46830357 C15.8383929,4.83348214 15.3441964,4.33526786 14.7133929,4.16651786 C13.5763393,3.85714286 9,3.85714286 9,3.85714286 C9,3.85714286 4.42366071,3.85714286 3.28660714,4.16651786 C2.65580357,4.33526786 2.16160714,4.83348214 1.99285714,5.46830357 C1.6875,6.61339286 1.6875,9.01205357 1.6875,9.01205357 C1.6875,9.01205357 1.6875,11.4066964 1.99285714,12.5558036 C2.16160714,13.190625 2.65580357,13.66875 3.28660714,13.8375 C4.42366071,14.1428571 9,14.1428571 9,14.1428571 C9,14.1428571 13.5763393,14.1428571 14.7133929,13.8334821 C15.3441964,13.6647321 15.8383929,13.1866071 16.0071429,12.5517857 C16.3125,11.4066964 16.3125,9.01205357 16.3125,9.01205357 L16.3125,9.01205357 Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/voliaofficial?utm_source=volia-club-&utm_medium=clickable-icon&utm_campaign=volia-club-footer-instagram-icon"
+              target="_blank" rel="noopener" aria-label="ВОЛЯ у Instagram">
+              <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" focusable="false">
+                <title>ВОЛЯ у Instagram</title>
+                <path fill-opacity=".7" d="M9.00200781,4.38404908 C6.44807585,4.38404908 4.3880647,6.44406023 4.3880647,8.99799219 C4.3880647,11.5519241 6.44807585,13.6119353 9.00200781,13.6119353 C11.5559398,13.6119353 13.6159509,11.5519241 13.6159509,8.99799219 C13.6159509,6.44406023 11.5559398,4.38404908 9.00200781,4.38404908 Z M9.00200781,11.9976576 C7.35158951,11.9976576 6.00234244,10.6524261 6.00234244,8.99799219 C6.00234244,7.34355828 7.3475739,5.99832683 9.00200781,5.99832683 C10.6564417,5.99832683 12.0016732,7.34355828 12.0016732,8.99799219 C12.0016732,10.6524261 10.6524261,11.9976576 9.00200781,11.9976576 L9.00200781,11.9976576 Z M14.8808701,4.19531511 C14.8808701,4.79364194 14.3989961,5.27150028 13.8046849,5.27150028 C13.2063581,5.27150028 12.7284997,4.78962632 12.7284997,4.19531511 C12.7284997,3.6010039 13.2103737,3.11912995 13.8046849,3.11912995 C14.3989961,3.11912995 14.8808701,3.6010039 14.8808701,4.19531511 Z M17.936754,5.28756274 C17.8684886,3.8459565 17.539208,2.56899052 16.4831009,1.51689905 C15.4310095,0.464807585 14.1540435,0.13552705 12.7124373,0.0632459565 C11.2266592,-0.0210819855 6.77334077,-0.0210819855 5.28756274,0.0632459565 C3.84997211,0.131511433 2.57300613,0.460791969 1.51689905,1.51288344 C0.460791969,2.5649749 0.13552705,3.84194088 0.0632459565,5.28354713 C-0.0210819855,6.76932515 -0.0210819855,11.2226436 0.0632459565,12.7084216 C0.131511433,14.1500279 0.460791969,15.4269939 1.51689905,16.4790853 C2.57300613,17.5311768 3.8459565,17.8604573 5.28756274,17.9327384 C6.77334077,18.0170664 11.2266592,18.0170664 12.7124373,17.9327384 C14.1540435,17.864473 15.4310095,17.5351924 16.4831009,16.4790853 C17.5351924,15.4269939 17.864473,14.1500279 17.936754,12.7084216 C18.021082,11.2226436 18.021082,6.77334077 17.936754,5.28756274 Z M16.0172895,14.3026213 C15.7040714,15.0896821 15.0977133,15.6960402 14.3066369,16.0132738 C13.1220301,16.4831009 10.3110987,16.3746793 9.00200781,16.3746793 C7.6929169,16.3746793 4.87796988,16.4790853 3.69737869,16.0132738 C2.9103179,15.7000558 2.30395984,15.0936977 1.98672616,14.3026213 C1.51689905,13.1180145 1.62532069,10.3070831 1.62532069,8.99799219 C1.62532069,7.68890128 1.52091467,4.87395427 1.98672616,3.69336308 C2.29994423,2.90630229 2.90630229,2.29994423 3.69737869,1.98271054 C4.8819855,1.51288344 7.6929169,1.62130508 9.00200781,1.62130508 C10.3110987,1.62130508 13.1260457,1.51689905 14.3066369,1.98271054 C15.0936977,2.29592861 15.7000558,2.90228667 16.0172895,3.69336308 C16.4871166,4.87796988 16.3786949,7.68890128 16.3786949,8.99799219 C16.3786949,10.3070831 16.4871166,13.1220301 16.0172895,14.3026213 Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- Additional menu section end -->
       </div>
     </nav>
+    <!-- Navbar End -->
   </header>
+  <!-- Responsive header end -->
 
-  <!-- Main Content -->
+  <!-- Main content -->
   <main>
   </main>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <!-- Main cintent end -->
 
   <!-- Responsive Footer -->
   <footer class="footer bg-white border-top">
     <div class="container">
-      <span class="text-muted">© 2014-2018
-        <a href="http://volia.com?utm_source=volia-club-footer&utm_medium=link&utm_campaign=volia-club-footer-link" target="_blank">Воля</a>.</span>
+        <span class="social-link">
+          <a href="https://t.me/myvolia?utm_source=volia-club-footer&utm_medium=clickable-icon&utm_campaign=volia-club-footer-telegram-icon"
+            target="_blank" rel="noopener" aria-label="Канал MyVolia у Telegram">
+            <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" focusable="false">
+              <title>Канал MyVolia у Telegram</title>
+              <path fill-opacity=".7" d="M20.2303361,1.54889258 L17.1688358,15.9868554 C16.9378646,17.0058458 16.3355281,17.2594612 15.4795761,16.7794035 L10.8148641,13.342009 L8.56402738,15.5067976 C8.31494082,15.7558842 8.10661388,15.9642111 7.62655615,15.9642111 L7.96169079,11.2134511 L16.6072588,3.40119082 C16.9831531,3.06605617 16.5257396,2.88037346 16.0230376,3.21550811 L5.3349598,9.94537407 L0.733651707,8.50520087 C-0.26722338,8.19271046 -0.285338766,7.50432579 0.941978648,7.02426805 L18.9396148,0.0906039922 C19.7729226,-0.221886419 20.5020669,0.276286701 20.2303361,1.54889258 Z"/>
+            </svg>
+          </a>
+        </span>
       <span class="social-link">
         <a href="https://facebook.com/voliaofficial?utm_source=volia-club-footer&utm_medium=clickable-icon&utm_campaign=volia-club-footer-facebook-icon"
-          target="_blank">
-          <img class="social-link__item" src="./img/FB-f-Logo__blue_512.png" alt="Воля у Facebook" title="Воля у Facebook">
+          target="_blank" rel="noopener" aria-label="ВОЛЯ у Facebook">
+          <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" focusable="false">
+            <title>ВОЛЯ у Facebook</title>
+            <path fill-opacity=".7" d="M18,1.92857143 L18,16.0714286 C18,17.1361607 17.1361607,18 16.0714286,18 L12.6441964,18 L12.6441964,10.8803571 L15.0790179,10.8803571 L15.4285714,8.16428571 L12.6441964,8.16428571 L12.6441964,6.42857143 C12.6441964,5.64107143 12.8611607,5.10669643 13.9901786,5.10669643 L15.4285714,5.10669643 L15.4285714,2.67991071 C15.1794643,2.64776786 14.3276786,2.57142857 13.33125,2.57142857 C11.2580357,2.57142857 9.83571429,3.83705357 9.83571429,6.16339286 L9.83571429,8.16830357 L7.39285714,8.16830357 L7.39285714,10.884375 L9.83973214,10.884375 L9.83973214,18 L1.92857143,18 C0.863839286,18 0,17.1361607 0,16.0714286 L0,1.92857143 C0,0.863839286 0.863839286,0 1.92857143,0 L16.0714286,0 C17.1361607,0 18,0.863839286 18,1.92857143 Z"
+            />
+          </svg>
         </a>
       </span>
       <span class="social-link">
         <a href="https://twitter.com/voliaofficial?utm_source=volia-club-footer&utm_medium=clickable-icon&utm_campaign=volia-club-footer-twitter-icon"
-          target="_blank">
-          <img class="social-link__item" src="./img/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Воля у Twitter" title="Воля у Twitter">
+          target="_blank" rel="noopener" aria-label="ВОЛЯ у Twitter">
+          <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" focusable="false">
+            <title>ВОЛЯ у Twitter</title>
+            <path fill-opacity=".7" d="M16.0714286,0 L1.92857143,0 C0.863839286,0 0,0.863839286 0,1.92857143 L0,16.0714286 C0,17.1361607 0.863839286,18 1.92857143,18 L16.0714286,18 C17.1361607,18 18,17.1361607 18,16.0714286 L18,1.92857143 C18,0.863839286 17.1361607,0 16.0714286,0 Z M14.1066964,6.38035714 C14.1147321,6.49285714 14.1147321,6.609375 14.1147321,6.721875 C14.1147321,10.2053571 11.4629464,14.2191964 6.61741071,14.2191964 C5.12276786,14.2191964 3.73660714,13.7852679 2.57142857,13.0379464 C2.784375,13.0620536 2.98928571,13.0700893 3.20625,13.0700893 C4.43973214,13.0700893 5.57276786,12.6522321 6.47678571,11.9450893 C5.31964286,11.9209821 4.34732143,11.1616071 4.01383929,10.1169643 C4.41964286,10.1772321 4.78526786,10.1772321 5.203125,10.06875 C3.99776786,9.82366071 3.09375,8.76294643 3.09375,7.48125 L3.09375,7.44910714 C3.44330357,7.64598214 3.853125,7.76651786 4.28303571,7.78258929 C3.54891221,7.29427367 3.10837797,6.47053501 3.10982143,5.58883929 C3.10982143,5.09866071 3.23839286,4.64866071 3.46741071,4.25892857 C4.76517857,5.85803571 6.71383929,6.90267857 8.89955357,7.01517857 C8.52589286,5.22723214 9.86383929,3.77678571 11.4709821,3.77678571 C12.2303571,3.77678571 12.9133929,4.09419643 13.3955357,4.60848214 C13.9901786,4.49598214 14.5607143,4.275 15.0669643,3.97366071 C14.8700893,4.584375 14.45625,5.09866071 13.9098214,5.42410714 C14.4401786,5.36785714 14.9544643,5.21919643 15.4285714,5.01428571 C15.0709821,5.540625 14.6209821,6.00669643 14.1066964,6.38035714 L14.1066964,6.38035714 Z"
+            />
+          </svg>
         </a>
       </span>
       <span class="social-link">
         <a href="https://www.youtube.com/voliaofficial?utm_source=volia-club-footer&utm_medium=clickable-icon&utm_campaign=volia-club-footer-youtube-icon"
-          target="_blank">
-          <img class="social-link__item" src="./img/youtube_social_square_red.png" alt="ВОЛЯ на YouTube" title="ВОЛЯ на YouTube">
+          target="_blank" rel="noopener" aria-label="Канал ВОЛЯ на YouTube">
+          <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" focusable="false">
+            <title>Канал ВОЛЯ на YouTube</title>
+            <path fill-opacity=".7" d="M7.50535714,6.834375 L11.3303571,9.00803571 L7.50535714,11.1816964 L7.50535714,6.834375 Z M18,1.92857143 L18,16.0714286 C18,17.1361607 17.1361607,18 16.0714286,18 L1.92857143,18 C0.863839286,18 0,17.1361607 0,16.0714286 L0,1.92857143 C0,0.863839286 0.863839286,0 1.92857143,0 L16.0714286,0 C17.1361607,0 18,0.863839286 18,1.92857143 Z M16.3125,9.01205357 C16.3125,9.01205357 16.3125,6.61741071 16.0071429,5.46830357 C15.8383929,4.83348214 15.3441964,4.33526786 14.7133929,4.16651786 C13.5763393,3.85714286 9,3.85714286 9,3.85714286 C9,3.85714286 4.42366071,3.85714286 3.28660714,4.16651786 C2.65580357,4.33526786 2.16160714,4.83348214 1.99285714,5.46830357 C1.6875,6.61339286 1.6875,9.01205357 1.6875,9.01205357 C1.6875,9.01205357 1.6875,11.4066964 1.99285714,12.5558036 C2.16160714,13.190625 2.65580357,13.66875 3.28660714,13.8375 C4.42366071,14.1428571 9,14.1428571 9,14.1428571 C9,14.1428571 13.5763393,14.1428571 14.7133929,13.8334821 C15.3441964,13.6647321 15.8383929,13.1866071 16.0071429,12.5517857 C16.3125,11.4066964 16.3125,9.01205357 16.3125,9.01205357 L16.3125,9.01205357 Z"
+            />
+          </svg>
         </a>
       </span>
       <span class="social-link">
         <a href="https://www.instagram.com/voliaofficial?utm_source=volia-club-footer&utm_medium=clickable-icon&utm_campaign=volia-club-footer-instagram-icon"
-          target="_blank">
-          <img class="social-link__item" src="./img/instagram-icon_256x256.png" alt="ВОЛЯ у Instagram" title="ВОЛЯ у Instagram">
+          target="_blank" rel="noopener" aria-label="ВОЛЯ у Instagram">
+          <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" focusable="false">
+            <title>ВОЛЯ у Instagram</title>
+            <path fill-opacity=".7" d="M9.00200781,4.38404908 C6.44807585,4.38404908 4.3880647,6.44406023 4.3880647,8.99799219 C4.3880647,11.5519241 6.44807585,13.6119353 9.00200781,13.6119353 C11.5559398,13.6119353 13.6159509,11.5519241 13.6159509,8.99799219 C13.6159509,6.44406023 11.5559398,4.38404908 9.00200781,4.38404908 Z M9.00200781,11.9976576 C7.35158951,11.9976576 6.00234244,10.6524261 6.00234244,8.99799219 C6.00234244,7.34355828 7.3475739,5.99832683 9.00200781,5.99832683 C10.6564417,5.99832683 12.0016732,7.34355828 12.0016732,8.99799219 C12.0016732,10.6524261 10.6524261,11.9976576 9.00200781,11.9976576 L9.00200781,11.9976576 Z M14.8808701,4.19531511 C14.8808701,4.79364194 14.3989961,5.27150028 13.8046849,5.27150028 C13.2063581,5.27150028 12.7284997,4.78962632 12.7284997,4.19531511 C12.7284997,3.6010039 13.2103737,3.11912995 13.8046849,3.11912995 C14.3989961,3.11912995 14.8808701,3.6010039 14.8808701,4.19531511 Z M17.936754,5.28756274 C17.8684886,3.8459565 17.539208,2.56899052 16.4831009,1.51689905 C15.4310095,0.464807585 14.1540435,0.13552705 12.7124373,0.0632459565 C11.2266592,-0.0210819855 6.77334077,-0.0210819855 5.28756274,0.0632459565 C3.84997211,0.131511433 2.57300613,0.460791969 1.51689905,1.51288344 C0.460791969,2.5649749 0.13552705,3.84194088 0.0632459565,5.28354713 C-0.0210819855,6.76932515 -0.0210819855,11.2226436 0.0632459565,12.7084216 C0.131511433,14.1500279 0.460791969,15.4269939 1.51689905,16.4790853 C2.57300613,17.5311768 3.8459565,17.8604573 5.28756274,17.9327384 C6.77334077,18.0170664 11.2266592,18.0170664 12.7124373,17.9327384 C14.1540435,17.864473 15.4310095,17.5351924 16.4831009,16.4790853 C17.5351924,15.4269939 17.864473,14.1500279 17.936754,12.7084216 C18.021082,11.2226436 18.021082,6.77334077 17.936754,5.28756274 Z M16.0172895,14.3026213 C15.7040714,15.0896821 15.0977133,15.6960402 14.3066369,16.0132738 C13.1220301,16.4831009 10.3110987,16.3746793 9.00200781,16.3746793 C7.6929169,16.3746793 4.87796988,16.4790853 3.69737869,16.0132738 C2.9103179,15.7000558 2.30395984,15.0936977 1.98672616,14.3026213 C1.51689905,13.1180145 1.62532069,10.3070831 1.62532069,8.99799219 C1.62532069,7.68890128 1.52091467,4.87395427 1.98672616,3.69336308 C2.29994423,2.90630229 2.90630229,2.29994423 3.69737869,1.98271054 C4.8819855,1.51288344 7.6929169,1.62130508 9.00200781,1.62130508 C10.3110987,1.62130508 13.1260457,1.51689905 14.3066369,1.98271054 C15.0936977,2.29592861 15.7000558,2.90228667 16.0172895,3.69336308 C16.4871166,4.87796988 16.3786949,7.68890128 16.3786949,8.99799219 C16.3786949,10.3070831 16.4871166,13.1220301 16.0172895,14.3026213 Z"
+            />
+          </svg>
         </a>
       </span>
-      <span class="social-link">
-        <a href="https://t.me/myvolia?utm_source=volia-club-footer&utm_medium=clickable-icon&utm_campaign=volia-club-footer-telegram-icon"
-          target="_blank">
-          <img class="social-link__item" src="./img/telegram-logo_456x456.png" alt="Канал MyVolia у Telegram" title="Канал MyVolia у Telegram">
-        </a>
-      </span>
-      <span class="social-link">
-        <a href="https://my.volia.com/?utm_source=volia-club-footer&utm_medium=clickable-icon&utm_campaign=volia-club-footer-portal-icon"
-          target="_blank">
-          <img class="social-link__item" src="./img/portal_icon_big.png" alt="Портал абонента ВОЛЯ" title="Портал абонента ВОЛЯ">
-        </a>
-      </span>
+      <div class="text-muted">© 2014-2018
+          <a href="http://volia.com?utm_source=volia-club-footer&utm_medium=link&utm_campaign=volia-club-footer-link" target="_blank">ВОЛЯ</a>.</span>
     </div>
   </footer>
+  <!-- Responsive footer end -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <!-- Optional JavaScript end -->
 </body>
 
 </html>

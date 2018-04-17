@@ -1,2 +1,7 @@
-# Responsive header and footer template for the online community website based on Bootstrap 4.
+# Fully responsive header-navigation-footer template for the telecom company online community website.
+
+## I made it using:
+- Bootstrap 4.1.
+- Popper.js
+- SVG
 

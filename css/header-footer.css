@@ -1,4 +1,3 @@
-
 html {
   position: relative;
   min-height: 100%;
@@ -6,9 +5,10 @@ html {
 
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
+/* Header and footer basic styles */
 header {
   background-color: #ffffff;
 }
@@ -17,12 +17,12 @@ header {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 50px; /* Set the fixed height of the footer here */
-  line-height: 50px; /* Vertically center the text there */
+  height: 30px; /* Set the fixed height of the footer here */
+  line-height: 30px; /* Vertically center the text there */
   background-color: #ffffff;
 }
 
-/* Custom main content container CSS */
+/* Custom footer container */
 .container {
   width: auto;
   max-width: 680px;
@@ -37,44 +37,44 @@ header {
   border-color: transparent;
 }
 
-/* Changes navbar toggler icon color*/
-/*.navbar-light .navbar-toggler-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238, 100, 26, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
-}*/
-
-/* Adds CSS animation to the navber toggler icon*/
+/* Adds CSS animation to the navber toggler icon */
 .navbar-light .navbar-toggler-icon {
-  transition:all .5s linear;
+  transition: all 0.5s linear;
 }
 
-.navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
-  transform:rotate(180deg);
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  transform: rotate(180deg);
 }
 
 /* Header an footer common styles */
 
-span.text-muted {
-  font-size: 0.90rem;
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.7);
 }
 
-span.text-muted > a {
-  color: rgba(0, 0, 0, 0.5);
+div.text-muted {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
-span.text-muted > a:hover {
+div.text-muted > a {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
 
 .box-shadow {
   -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item {
+  font-size: 0.9rem;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover,
-span.text-muted > a:hover,
-span.text-muted > a:focus,
+div.text-muted > a:hover,
+div.text-muted > a:focus,
 a#navbarDropdown.nav-link.dropdown-toggle:focus,
 a#navbarDropdown.nav-link.dropdown-toggle:hover,
 .navbar-light .navbar-nav .nav-link:focus,
@@ -88,46 +88,35 @@ a#navbarDropdown.nav-link.dropdown-toggle:hover,
 
 a.navbar-brand.brand-community {
   color: #ee641a;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-a.navbar-brand.brand-community:focus {
-  color: #009639;
-}
-
+a.navbar-brand.brand-community:focus,
 a.navbar-brand.brand-community:hover {
   color: #009639;
 }
 
-/* Footer social icons styles */
-
-img.social-link__item {
-  width: 25px;
-  height: 25px;
-  margin: 0 10px 5px;
-  border-radius: 3px;
-}
+/* Footer links and social icons styles */
 
 span.social-link > a {
   text-decoration: none;
+  margin: 0 7px;
 }
 
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-/* Social icons margin fix for smallest displays*/
-@media (max-width: 465px) {
-  img.social-link__item {
-    margin: 0 2px 3px;
-  }
+.navbar-nav-svg:hover {
+  fill: #009639;
 }
 
 /* Copywright text fix for smallest displays */
 @media (max-width: 370px) {
-  span.text-muted {
-    font-size: 0.8rem;
+  div.text-muted {
+    font-size: 0.7rem;
   }
 }
 
-@media (max-width: 340px) {
-  span.text-muted {
-    display: none;
-  }
-}

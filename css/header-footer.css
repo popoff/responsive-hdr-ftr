@@ -20,11 +20,13 @@ header {
 
 /* Adds CSS animation to the navber toggler icon */
 .navbar-light .navbar-toggler-icon {
+  -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .box-shadow {
@@ -79,7 +81,8 @@ a.navbar-brand.brand-community:hover {
 }
 
 .btn-outline-success:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 150, 57, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 150, 57, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 150, 57, 0.5);
 }
 
 /* FOOTER STYLES */

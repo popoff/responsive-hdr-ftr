@@ -35,7 +35,7 @@ header {
 }
 
 .dropdown-item {
-  font-size: 0.95rem;
+  font-size: 0.97rem;
 }
 
 .dropdown-item:focus,
@@ -64,23 +64,29 @@ a.navbar-brand.brand-community:hover {
   color: #009639;
 }
 
-.btn-outline-success {
-  color: #009639;
-  background-color: transparent;
-  background-image: none;
+.btn-success {
+  /* color: #fff;
   border-color: #009639;
-  border-radius: 16px;
-  font-size: 0.90rem;
+  font-size: 1rem; */
+  color: #009639;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #009639;
+
+box-shadow: 6px 6px 0 0 #009639;
+
+transition: box-shadow 0.15s, margin 0.15s;
 }
 
 /* Start Conversation button styes */
-.btn-outline-success:hover, .btn-outline-success:active  {
+.btn-success:hover, .btn-success:active  {
+  /* color: #fff;
+  background-color: #00c54c;
+  border-color: #00c54c; */
   color: #fff;
-  background-color: #009639;
-  border-color: #009639;
+  box-shadow: 0 0 0 0 #009639;
 }
 
-.btn-outline-success:focus {
+.btn-success:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 150, 57, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(0, 150, 57, 0.5);
 }
@@ -125,12 +131,12 @@ svg {
   }
 }
 
-/* HEADER AN FOOTER COMMON STYLES */
+/* HEADER AND FOOTER COMMON STYLES */
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.7);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
-G
+
 div.text-muted {
   font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.7) !important;

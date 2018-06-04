@@ -20,8 +20,8 @@ header {
 
 /* Adds CSS animation to the navber toggler icon */
 .navbar-light .navbar-toggler-icon {
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -46,49 +46,47 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus,
 a#navbarDropdown.nav-link.dropdown-toggle:hover,
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #009639;
+  color: #008533;
 }
 
 .dropdown-item:active {
   background-color: #ffffff;
 }
 
-a.navbar-brand.brand-community {
-  color: #ee641a;
-  font-size: 20px;
-  /* font-weight: 600; */
-}
-
-a.navbar-brand.brand-community:focus,
-a.navbar-brand.brand-community:hover {
-  color: #009639;
-}
+/* .logo-club {
+  height: 40px;
+} */
 
 .btn-success {
   /* color: #fff;
   border-color: #009639;
   font-size: 1rem; */
-  color: #009639;
+  color: #008533;
   background-color: rgb(255, 255, 255);
-  border: 2px solid #009639;
-
-box-shadow: 6px 6px 0 0 #009639;
-
-transition: box-shadow 0.15s, margin 0.15s;
+  border: 2px solid #008533;
+  box-shadow: 6px 6px 0 0 #008533;
+  background-image: none;
+  transition: box-shadow 0.15s, margin 0.15s;
 }
 
-/* Start Conversation button styes */
+/* Portal button styes */
+
 .btn-success:hover, .btn-success:active  {
   /* color: #fff;
   background-color: #00c54c;
   border-color: #00c54c; */
   color: #fff;
-  box-shadow: 0 0 0 0 #009639;
+  box-shadow: 0 0 0 0 #008533;
 }
 
 .btn-success:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 150, 57, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(0, 150, 57, 0.5);
+  border-color: #008533;
+          box-shadow: 0 0 0 0.2rem rgba(0, 133, 51, 0.4);
+          outline: 0;
+}
+
+.btn-success:visited {
+  outline: none;
 }
 
 /* FOOTER STYLES */
@@ -121,7 +119,39 @@ svg {
 }
 
 .navbar-nav-svg:hover {
-  fill: #009639;
+  fill: #008533;
+}
+
+/* Logo scaling fix */
+
+@media (max-width: 576px) {
+  .logo-club {
+    height: 35px;
+  }
+}
+
+@media (min-width: 576px) {
+  .logo-club {
+    height: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-club {
+    height: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-club {
+    height: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-club {
+    height: 50px;
+  }
 }
 
 /* Copywright text fix for smallest displays */

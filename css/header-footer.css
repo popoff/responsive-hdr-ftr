@@ -1,16 +1,16 @@
-/* FONTS */
+/* CUSTOM FONTS */
+
 /* roboto-regular - cyrillic_latin */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/roboto-v18-cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Roboto'), local('Roboto-Regular'),
-       url('../fonts/roboto-v18-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/roboto-v18-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v18-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/roboto-v18-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/roboto-v18-cyrillic_latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto-v18-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-cyrillic_latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
 /* roboto-italic - cyrillic_latin */
@@ -19,12 +19,11 @@
   font-style: italic;
   font-weight: 400;
   src: url('../fonts/roboto-v18-cyrillic_latin-italic.eot'); /* IE9 Compat Modes */
-  src: local('Roboto Italic'), local('Roboto-Italic'),
-       url('../fonts/roboto-v18-cyrillic_latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/roboto-v18-cyrillic_latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v18-cyrillic_latin-italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/roboto-v18-cyrillic_latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/roboto-v18-cyrillic_latin-italic.svg#Roboto') format('svg'); /* Legacy iOS */
+  src: local('Roboto Italic'), local('Roboto-Italic'), url('../fonts/roboto-v18-cyrillic_latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-cyrillic_latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-cyrillic_latin-italic.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-cyrillic_latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-cyrillic_latin-italic.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
 /* roboto-700 - cyrillic_latin */
@@ -33,16 +32,15 @@
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/roboto-v18-cyrillic_latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Roboto Bold'), local('Roboto-Bold'),
-       url('../fonts/roboto-v18-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/roboto-v18-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v18-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/roboto-v18-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/roboto-v18-cyrillic_latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto-v18-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-cyrillic_latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
-/* BASIC STYLING */
 
+/* CUSTOM MAIN CONTAINER STYLES */
 html {
   position: relative;
   min-height: 100%;
@@ -50,11 +48,28 @@ html {
 
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
-  /* font-family: "Open Sans", sans-serif; */
   font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER STYLES */
+
+/* HEADER AND FOOTER COMMON STYLES */
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+}
+
+div.text-muted {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+div.text-muted>a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+
+/* CUSTOM HEADER STYLES */
 header {
   background-color: #ffffff;
 }
@@ -73,7 +88,7 @@ header {
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .box-shadow {
@@ -81,14 +96,15 @@ header {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
+/* Navbar menu styles */
 .dropdown-item {
   font-size: 1rem;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover,
-div.text-muted > a:hover,
-div.text-muted > a:focus,
+div.text-muted>a:hover,
+div.text-muted>a:focus,
 a#navbarDropdown.nav-link.dropdown-toggle:focus,
 a#navbarDropdown.nav-link.dropdown-toggle:hover,
 .navbar-light .navbar-nav .nav-link:focus,
@@ -100,8 +116,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:hover,
   background-color: #ffffff;
 }
 
-/* Portal button styes */
-
+/* My cabinet button aka Portal button styes */
 .btn-success {
   color: #ffffff;
   background: linear-gradient(#00a82f, #008f4b);
@@ -112,16 +127,20 @@ a#navbarDropdown.nav-link.dropdown-toggle:hover,
   border-color: #01ba36;
 }
 
-.btn-success:active  {
+.btn-success:active {
   background: linear-gradient(#01ba36, #019f53);
   box-shadow: inset 0 2px 1px #019f53;
 }
 
-.btn-success:focus, .btn-success:active:focus, .btn-success:visited {
+.btn-success:focus,
+.btn-success:active:focus,
+.btn-success:visited {
   box-shadow: none;
 }
 
-/* FOOTER STYLES */
+
+/* CUSTOM FOOTER STYLES */
+
 /* Custom footer container */
 .container {
   width: auto;
@@ -140,7 +159,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:hover,
 }
 
 /* Footer links and social icons styles */
-span.social-link > a {
+span.social-link>a {
   text-decoration: none;
   margin: 0 7px;
 }
@@ -154,8 +173,9 @@ svg {
   fill: #008533;
 }
 
-/* Logo scaling fix */
 
+/* RESPONSIVE BREAKPOINTS FIXES */
+/* Logo scaling fix */
 @media (max-width: 576px) {
   .logo-club {
     height: 35px;
@@ -186,25 +206,9 @@ svg {
   }
 }
 
-/* Copywright text fix for smallest displays */
+/* Copywright text fix for extra small displays */
 @media (max-width: 370px) {
   div.text-muted {
     font-size: 0.7rem;
   }
-}
-
-/* HEADER AND FOOTER COMMON STYLES */
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1rem;
-}
-
-div.text-muted {
-  font-size: 0.8rem;
-  color: rgba(0, 0, 0, 0.7) !important;
-}
-
-div.text-muted > a {
-  color: rgba(0, 0, 0, 0.7);
-  text-decoration: none;
 }
